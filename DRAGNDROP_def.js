@@ -69,7 +69,7 @@ lib.ssMetadata = [
 
 
 
-(lib.hiatos_1 = function() {
+(lib.hiatos = function() {
 	this.initialize(ss["DRAGNDROP_def_atlas_1"]);
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
@@ -1920,7 +1920,7 @@ if (reversed == null) { reversed = false; }
 
 
 // stage content:
-(lib.hiatos = function(mode,startPosition,loop,reversed) {
+(lib.hiatos_def = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -2062,7 +2062,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.score},{t:this.aciertos},{t:this.errores}]}).wait(1));
 
 	// rotulos
-	this.instance = new lib.hiatos_1();
+	this.instance = new lib.hiatos();
 	this.instance.setTransform(353,257,0.2865,0.2866);
 
 	this.instance_1 = new lib.diptongos();
@@ -2641,12 +2641,12 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(413.7,278.6,387.3,183.79999999999995);
+p.nominalBounds = new cjs.Rectangle(413.7,243.6,387.3,218.79999999999998);
 // library properties:
 lib.properties = {
 	id: '348202710A9C4D47BD8B5491975C520F',
 	width: 815,
-	height: 540,
+	height: 470,
 	fps: 24,
 	color: "#FFFFFF",
 	opacity: 1.00,
